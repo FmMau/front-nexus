@@ -16,6 +16,7 @@
   border: 1px solid var(--border);
   border-radius: 20px;
   padding: 2.5rem;
+  -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   box-shadow: var(--shadow);
   animation: fadeUp 0.5s ease;
@@ -104,7 +105,7 @@
 .page-subtitle { font-size: 13px; color: var(--muted); margin-top: 4px; }
 
 /* ── Cards ── */
-.card { background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem; backdrop-filter: blur(10px); }
+.card { background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem; -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); }
 .card-sm { padding: 1rem 1.25rem; }
 
 /* ── Balance hero ── */
@@ -172,7 +173,7 @@
 .field-display .value { color: var(--cream); }
 
 /* ── Modal ── */
-.modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.7); backdrop-filter: blur(4px); display: flex; align-items: center; justify-content: center; z-index: 1000; padding: 1rem; animation: fadeIn 0.2s ease; }
+.modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.7); -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px); display: flex; align-items: center; justify-content: center; z-index: 1000; padding: 1rem; animation: fadeIn 0.2s ease; }
 .modal { background: var(--navy-light); border: 1px solid var(--border); border-radius: 16px; padding: 2rem; width: 100%; box-shadow: var(--shadow); animation: fadeUp 0.3s ease; }
 .modal-title { font-family: var(--font-display); font-size: 1.3rem; color: var(--cream); margin-bottom: 0.25rem; }
 .modal-subtitle { font-size: 13px; color: var(--muted); margin-bottom: 1.5rem; }
